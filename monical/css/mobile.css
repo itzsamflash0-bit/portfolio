@@ -1,0 +1,97 @@
+/* ================================
+   MoniCal - Mobile Stylesheet
+   ================================ */
+
+/* Make sure this CSS loads only on small devices */
+@media (max-width: 768px) {
+
+  body {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+
+  /* Header */
+  header {
+    padding: 10px 15px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  /* List + Total Section */
+  .list-section {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  .list-nav {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 8px;
+  }
+
+  .total {
+    width: 100%;
+    text-align: left;
+  }
+
+  /* Items */
+  .item {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    background: var(--card-bg);
+    border-radius: 10px;
+  }
+
+  .item img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .item-name {
+    flex: 1;
+    font-size: 0.95rem;
+  }
+
+  .item-price {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  /* Floating button */
+  .floating-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    font-size: 1.8rem;
+  }
+
+  /* Modal Box */
+  .modal {
+    width: 90%;
+    left: 5%;
+    top: 25%;
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+  .modal input {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+  }
+
+  .modal .btn {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+}

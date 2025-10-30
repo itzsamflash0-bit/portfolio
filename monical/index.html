@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoniCal</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css" media="(max-width: 768px)">
+</head>
+
+<body>
+  <!-- ===== HEADER SECTION ===== -->
+  <header class="top-bar">
+    <div class="app-name">MoniCal</div>
+    <div class="theme-toggle">
+      <img src="https://cdn-icons-png.flaticon.com/512/581/581601.png" alt="Toggle Theme" id="themeIcon">
+    </div>
+  </header>
+
+  <!-- ===== SUB-HEADER (LIST NAME + TOTAL) ===== -->
+  <section class="list-info" id="listInfo">
+    <div class="list-name" id="listName">No List Yet</div>
+    <div class="total" id="totalAmount">₦0.00</div>
+  </section>
+
+  <!-- ===== MAIN SECTION (ITEMS CONTAINER) ===== -->
+  <main class="items-container" id="itemsContainer">
+    <!-- Dynamic list items will appear here -->
+  </main>
+
+  <!-- ===== FLOATING + BUTTON ===== -->
+  <button id="addBtn" class="add-btn">
+    <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" alt="Add">
+  </button>
+
+  <!-- ===== MODAL FOR INPUTS ===== -->
+  <div class="modal hidden" id="inputModal">
+    <div class="modal-content">
+      <h3 id="modalTitle">Create New List</h3>
+      <input type="text" id="modalInput" placeholder="Enter list name...">
+      <div class="modal-actions">
+        <button id="confirmBtn">
+          <img src="https://cdn-icons-png.flaticon.com/512/845/845646.png" alt="Confirm">
+        </button>
+        <button id="cancelBtn">
+          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" alt="Cancel">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TEMPLATE FOR ITEM (FOR JS USE) ===== -->
+  <template id="itemTemplate">
+    <div class="item-box">
+      <div class="item-image">
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png" alt="Item">
+      </div>
+      <div class="item-name">Item Name</div>
+      <div class="item-price">₦0.00</div>
+    </div>
+  </template>
+
+  <!-- JS Files -->
+  <script src="js/script.js" defer></script>
+  <script src="js/image.js" defer></script>
+</body>
+</html>
